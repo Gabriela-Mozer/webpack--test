@@ -94,5 +94,11 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "gabi.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/personal",
+      inject: true,
+      chunks: ["index", "another"],
+      filename: "personal.html",
+    }),
   ],
 };

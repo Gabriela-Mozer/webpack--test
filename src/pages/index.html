@@ -1,153 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Personal</title>
+    <!-- <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css"/> -->
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="main-header__nav">
+      <button class="hamburger hamburger--js" aria-label="otwórz menu">
+        &#127828;
+      </button>
+      <nav class="navigation navigation--js">
+        <a
+          href="https://coolors.co/b0d0d3-c08497-f7af9d-f7e3af-f3eec3"
+          alt="pallette"
+        ></a>
+        <a
+          class="navigation__link navigation__link-homepage"
+          href="nauka-html.html"
+          >Nauka html</a
+        >
+        <a class="navigation__link" href="index.html">Index html</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="index.html">Index html</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main-header">
+        <h1 class="main-heading main-heading--js" id="top">
+          Pierwszy projekt na kursie WTF
+        </h1>
+        <h4 class="main-heading main-heading--js__2">
+          ...Jesteś tu mile widziany przybyszu
+        </h4>
+        
+        <button class="main action--js">Zmień nagłówek</button>
+      </header>
+
+      <h4 class="extra-element extra-element--js"></h4>
+
+      <section class="about">
+        <h3 class="about__header">Tydzień 8</h3>
+        
+          <article class="about about__special">
+            <h2 id="second" class="about__heading about__heading--second">
+              Jakby tu kreatywnie zacząć....
+            </h2>
+            <img
+              class="about-picture"
+              src="cloud.png"
+              alt="cloud"
+              width="280"
+            />
+            <!-- <img class="about-picture" src="snowflake.png" alt="snowflake" width="310" /> -->
+<div class="grid-article">
+            <p class="about__description">
+              Po moich kilku (dziwnych) próbach nauczenia się HTML-a i CSS-a
+              zaczynam od nowa. Myślę, że wiedza, którą posiadałam przed zakupem
+              tego kursu się nieco przydaje, ale nie ukrywam, że jest wiele
+              praktycznych wskazówek, o których nie miałam pojęcia (np.
+              CTRL+SHIFT+P).
+            </p>
+            <p>
+              Wczoraj naczyłam się nieco o znaczniku nav i zastosowaniu js.
+              Oprócz tego zapoznałam się z terminalemn (,który nie wiem jeszcze
+              do czego mi będzie służył) oraz coś o rootach czyli "/"(czego
+              jezcze nie do końca rozumiem).
+            </p>
+            <p>
+              Oprócz tego mówiliśmy o specyficzności i mam nadzieję,że
+              zapamiętam, że najważniejszy jest !important, style,#id, .class i
+              na końcu sam element a także, że w sekcji style pierwszeństwo ma
+              ten element, który jest ,,niżej" w kodzie.
+            </p>
+            <p>Wprawadzam zmianę w ramach gita- znowu :)</p>
+            <section>
+              <h4>Co nieco o nazewnictwie:</h4>
+              <ul class="list">
+                <li class="list__item">camelCase</li>
+                <li class="list__item">kebab-case</li>
+                <li class="list__item">snake_case</li>
+                <li class="list__item">PascalCase</li>
+              </ul>
+
+              <dl>
+                <dt>div</dt>
+                <dd>Opis mojego diva</dd>
+
+                <dt>article</dt>
+                <dd>Opis mojego article</dd>
+              </dl>
+            </section>
+
+            <section>
+              <div class="grid">
+                <div class="grid-item">Gridowa tabela</div>
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+              </div>
+              <h4>Tabela</h4>
+              <table class="table">
+                <caption class="grid-element_1">
+                  Próbny spis
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Treść kolumny 1</th>
+                    <th>Treść kolumny 2</th>
+                    <th>Treść kolumny 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3 Jakiś dłuższy tekst, żeby był</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section>
+              <h4>Kroki do stworzenia dobrego html-a:</h4>
+              <ol>
+                <li>Przeanalizuj treść</li>
+                <li>Podziel na sekcje</li>
+                <li>Utwórz pierwszą wersję kodu</li>
+              </ol>
+            </section>
+
+            <p>
+              Nauczyłam się dzisiaj nieco o gicie i githubie. By założyć nowy
+              projekt w gicie należy użyć git init. Kolejne komendy to git
+              config --global user.name"Imie i nazwisko" oraz git config
+              --global user.email adress. Aby śledzić stan projektu używa się
+              git status. Ty stanem projektu jest właśnie commit.Dla dodania
+              zmian należy użyć git add . a żeby zobaczyć historię gitk. Git
+              push wypycha na serwer Natomiast github tworzy nowe repozytorium i
+              można powiedzieć, że pozwala gromadzić pliki i śledzić wprowadzane
+              zmiany. Oprócz tego było nieco więcej o samym divach (nie mają
+              znaczenia semantycznego), displayach, width i height, overflow czy
+              jednostkach. Jeśli chodzi o stylizacje strony to przerobiony
+              został box model czyli padding border i margin, box sizing, który
+              definiuje wartości wymiarów elementów a także position i z -index
+              oraz dowiedziałam się, że float nie tylko służy do ułożenia
+              elementu względem ekranu na danej stronie ale bardziej do tego,
+              aby zawarty na stronie tekst opływał go z właściwej strony.
+              Poznałam dzisiaj równiej podstawowe zmienne w js(const, let, var)
+              oraz typy proste (string,number,Bigint, boolean,null i undefined).
+              let jest zmienna a const stała. Immutability- oznacza, że nie
+              możemy zmieniać wart prostych w js tylko połączenia między nimi.
+              ip config- sprawdza adres ip w terminalu. BEM- są to logiczne
+              klasy DOM- Document Object Model czyli złożony w przeglądarce
+              HTML.
+            </p>
+            <p>
+              W tygodniu 5 było o dziedziczeniu- czyli o tym,że style mogą być
+              nadawane automatycznie przez przeglądarkę, lub dziedziczyć od
+              "rodziców" jeśli ich styl nie został zdefiniowany. Wartość
+              inherit- definiuje, że wartość ma być dziedziczona od wartości
+              elementu wyżej (np. rodzica). Dowiedziałam się również o kolejnych
+              funkcjach i działaniu JS oraz z czego się składa (deklaracja,
+              parametr,słowo klucz, wynik).Niemutowalność to brak możliwości
+              zmianny zmiennej. Funkcje zawsze coś zwracają - nawet jeśli jest
+              to undefined.Funkcje są dla zastosowania DRY(don't repeat
+              yourself), zwiększają czytelnośc kodu i pozwalają na łatwiejsze
+              wykrywanie błędów. FAT arrow funkcion (=>) skraca zapis
+              deklaracji,zwiększa czytelność(taa...), nie tworzy nowego
+              kontekstu, nie jest zamiennikiem tradycyjnej funkcji. Prawie
+              wszystko w JS jet obietktem- strukturą danych.Zmienne to własności
+              a funkcje to metody i wywołuemy je przez nazwę obiektu.
+              Immutability w obiektach- nie możemy zmienić wartości ale, możemy
+              zmienć połączenia. Zatem mutowanie opiera się na połączeniach a
+              nie na wartościach. W tym tygodniu była również mowa o debuggingu-
+              czyli procedurze usuwania błędów. Omówione też zostały Listy,
+              tabele i definicje czyli ul, li i ol zagnieżdżanie list dl, dt,
+              dd. table pozwala tworzyć tabelę: tr to wiersz, td komórka, thead-
+              nagłówek, tbody-"ciało" tabeli i caption czyli opis. Był to nieco
+              luźniejszy temat, z którego zapamiętać należy tyle, że budujemy
+              layotów na bazie tabel. Kolejnym zagadnieniem była Normalizacja
+              oraz reset.Restet - służy wyłączaniu domyślnych stylów. Natomiast
+              normalizacja za pomocą dodatkowo przypiętego normalize.css
+              sprawia, że strona jest ostylowana przez domyślne style
+              przeglądarki. No i nadeszła pora na flexbox i jest tego naprawdę
+              sporo : display-flex, wrap,flow, justify-content,
+              align-content,align-items,align-self, order,flex-grow,
+              flex-shrink,flex-basis. No sporo tego ale myślę, że w swoim czasie
+              załapię :) Było też o tłach i ich pozycjonowaniu, wielkości i
+              kolorach i rzecz, która mnie ucieszyła najbardziej: gradienty. Na
+              koniec była Figma, i muszę przyznać, że była to chyba
+              najprzyjemniejsza część tego tygodnia, nie tylko dlatego, że
+              grafik dezajn is maj paszyn, ale także ze względu na to, że wiele
+              z tego było intuicyjne. Mam nadzieję, że jeszcze kiedyś do tego
+              wrócę, żeby opanować to lepiej :)
+            </p>
+            <p>
+              W tygodniu 6 mowa była o logice w JS oraz o tym, że porównania to
+              wyrażenia logiczne. Najważniejsze co powinnam z tego wynieść: to
+              zapisy >, >=, =, !=,!==(dla typeof), że false przyjmuje 6 wartości
+              : 0,'', false, null,undefined, NaN (not a number). O warunku'if',
+              która obsługuje true i false i łączenie zdan za pomocą && (and) i
+              || (or). Wartość wyrażenia można również "odwrócić" za pomocą if
+              np.: !false == true. Do tego można dodać dodatkowy warunek else,
+              który wyświetla inną wartość jeśli pierwsza if nie spełni
+              postawionego warunku. Istnieje też możliwość else if do stworzenia
+              zupełnie nowego warunku. Switch z kolei jest instrukcją, która
+              pozwala na sprawdzanie różnych warunków w jednym zapisie np: const
+              myNumber=6 switch (myNumber){ case 7: console.log('hi 7'); break;
+              case 9: console.log('hi 9'); break; default: console.log('hi
+              another number'); } Ponadto jest jeszcze zapis skrócony
+              (zmienna1>zmienna2)?console.log ('true') console.log('false'). Z
+              HTML-owych rzeczy były formularze, inputy i labele. form to
+              element blokowy, który pozwala wygenerować coś co pozwala na
+              wygenerowanie skrzynki, której możemy stawaić inputy (opakowane w
+              p), w miejscu name piszemy nazwePola , należy też podać idPola
+              (często o tej zamej nazwie co name). Label jest opisem do tego
+              pola i należy dołączyć 'labelfor= idInput'.Innymi atrybutami
+              imputa są value, placeholder (tekst podpowiedzi). Fieldset tworzy
+              grupę pól, a legend opis. Kolejnymi atrybutami inputa są : type
+              :'radio'- przyciski do wybierania w kształcie kropek i
+              type="checkbox"- przyciski w kształcie kwadratu.Można także dodsć
+              strybut bez nazwy checked, który zaznacza atrybuty radio i
+              checkbox. Z innych często spotykanych na stronie typów są
+              "number", "password", "email", "tel","range"(czyli taki fajny
+              suwak , któremu trzba nadać wartości min, max i step),
+              "file"(,który przegląda pliki). Select można używać zamiast inputa
+              a option , daje nam możliwość wyboru opcji z listy rozwijanej.
+              Textarea jest ciekawym znacznikiem bo daje możliwość wpisania
+              tekstu wraz ze tabulatorami. Formularze mogą być mogą być również
+              przyjmowane i wysyłane. Domyślą wartością jest get ale można nadać
+              metodę "post".
+            </p>
+            <p style="color: red">
+              [Dobra nie do końca rozumiem o co chodziło tutaj]
+            </p>
+            <p>
+              Ostatnią rzeczą związaną z formularzami była ich walidacja czyli
+              sprawdzenie poprawności danych w formularzu. required - to
+              wymagane pole do wypełnienia w inpucie. pattern="[a-zA-ZO-9]+" to
+              wyrażenie regularne pomagające wykryć ciąg znaków.
+            </p>
+            <p style="color: red">
+              [Dobra tutaj też nie do końca rozumiem o co chodziło tutaj]
+            </p>
+            <p>
+              Następnie była mowa o gridach, czyli odpowiedzi, na którą długo
+              czekałam: jak uzyskać responzywność bez bootstrapa (czy innych
+              frameworków) grid line,grid track(column), grid track(row), grid
+              cell i grid area (to rozmieszczenie w gridzie), który zawiera
+              numeracje od 1-6 i pozwala na budowanie layotów. Najbardziej
+              podstawowym layotem jest taki, który zawiera :header,
+              article,aside i footer. W CSS-ie aby uruchomić grid używamy
+              display: grid (np. dla sekcji main). grid-template-columns, i
+              grid-template-rows, definiują liczbę kolumn i wierszy. Nowo
+              poznaną wartością jest fr- , który oznacza ułamek jakiejś
+              wielkości (np wiersza).Można też określać powtarzalność dla kolumn
+              czy wierszy dzięki repeat(ileRazy, wartość) column-gap - przerwy
+              między kolumnami. minmax(wart.min, wart.max). aside- reprezentuje
+              treść boczną grid item- odnosi się do zawartości gridu. aby nadać
+              grid w jakiejś sekcji należy podać to miejsce i użyc
+              grid-area:'nazwa miejsca' np: .footer{ grid-area:footer; }
+              grid-template-areas-odpowiada za istnienie i rozmieszczanie
+              elementów ... mogłabym powiedzieć o gridzie więcej ale, już trochę
+              tego dużo, więc powiem tylko na zakończenie, że grid nie zastępuje
+              flexboxa. Ostatnią lekcją jest przepis na hamburgera:
+              <ul>
+              <li>Nawigacja</li>
+              <li>Style do nawigacji na mobile</li>
+              <li>Style do nawigacji na desktop</li>
+              <li>Przycisk do pokazaywania/ukrywania (zmiana klasy)</li>
+              <li>Kod js do podpięcia się pod przycisk</li>
+              <li>Kod js do zmiany klasy</li>
+              </ul>
+              Do tego posłuży nam kod w js element.classList, który przyjmuje
+              wartości add, remove, toggle, contains
+            </p>
+            <p>W tygodniu 7 zaczęło się od pseudoklas i pseudelementów, z którymi miałam już wcześniej do czynienia (before, after, hover) a także i pseudoklasy,z którymi wcześniej nie miałam styczności (visited, focus, first-child (no może coś tam słyszałam),last-child,not). Następnie pozałam gitignore oraz node js. Pierwsze z nich to specjalny plik do ochrony zawartości przed widocznością w githubie. Drugie to taki js działający poza przeglądarką używana w terminalu. NPM to repozytorium do ściągania gotowych paczek ułatwiających budowę projektu. Innymi słowy  to taki app store dla frontendowców. NPX to komenda w wierszu poleceń stosowana po to by korzystać z narzędzi bez ich instalacji.</p>
+            <p> W tygodniu 8 mowa była o modułach i @import oraz @eksport w js i css. Potem Instalowany był ebpack czyli podstawowe narzędzie frontendowca, który jeszcze nie bardzo wiem jak ma pomóc na dobrą sprawę, ale wiem  że go używamy a pomocą paczek npm. Uruchamialiśmy Webpack Starter Kit i  wspomnieliśmy o source mapach, dodawaniu nowych plików do Webpacka, o dist, który jest wynikiem naszej pracy ale nie należy trzymać go w repozytorium, o śledzeniu błędów w terminalu dzięki webpackowi. W końcu mówiliśmy  zmiennych w css czyli pseudoselektorze :root, a także zmianie wartości przy pomocy js dzięki document.documentElement.style.setProperty ('--zmienna', 'wartość');
+              Praca domowa wydaje się być bardzo trudna ...  </p>
+            <p class="extra-paragraph--js"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="week">
+        <h3>Tydzień 7</h3>
+        <article class="week-summary">
+          <h2
+            id="third"
+            class="week-summary__heading week-summary__heading--third"
+          >
+            To czego się dzisiaj nauczyłam...
+          </h2>
+          <br />
+          <p class="week-summary__description">
+            To przede wszystkim nieco więcej o samym front endzie ( czy jak kto
+            woli frontendzie lub front-endzie) od strony teoretycznej, o
+            warstwach, ścieżce rozwoju, czy o znacznikach semantycznych (,które
+            mam nadzieję wkrótce opanuję).
+          </p>
+          <p>
+            Będę dzisiaj się zwierzać... mianowicie nie twierdzę, że miałobyć
+            lekko, ale nie sądziłam, że będzie tak intensywnie i mam wrażenie,
+            że nie jestem w stanie zapamiętć wszystkiego... Może rzeczywiście
+            trzeba zabierać się za zabawę w naukę programowania przy dobrym
+            nastawieniu. Boję się, że nie wyniosę wszystkiego co wartościowe z
+            tych modułów, nawet jeśli do nich potem wróce to wszystko mi się
+            pomiesza.
+          </p>
+          <br />
+          <p>
+            <b
+              >Muszę pamiętać o validatorze i o pilnowaniu porządku w nowym
+              projekcie</b
+            >
+          </p>
+        </article>
+      </section>
+
+      <section class="week-summary__second">
+        <h3>Tydzień 8</h3>
+        <article class="week-summary">
+          <br />
+          <h2
+            id="fourth"
+            class="week-summary__heading week-summary__heading--fourth"
+          >
+            A co myślałam,że muszę umieć....
+          </h2>
+          <p class="week-summary__description">
+            <strong
+              >Myślałam, że powinnam opanować frameworki bo praca na samym
+              css-sie i html jest staroświecka. Co gorsza ( lub raczej co
+              głupsza) nie wpadłam na ten pomysł sama tylko ktoś mi to doradził,
+              gdy mi nie szło próbowałam to usprawiedliwiać tym, że powinnam
+              uczyć metodą prób i błędów ( co w sumie nie jest samo w sobie
+              złe), ale podstawy przyjdą do mnie same...</strong
+            >
+          </p>
+          <p>
+            To tyle na dzisiaj... myślałam, żeby jeszcze poszaleć i pododawać
+            jakieś obrazki, czy przyciski, ale będę się trzymała na razie tego
+            co na kursie.
+          </p>
+
+          <p>
+            Zobaczę jak mi pójdzie dziś js i czy validator zaakceptuje moją
+            pracę :)
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      To moja własna strona &copy; 2020
+      <a href="#top">Wróć na górę</a>
+      <a href="#second">Wróć do nagłówka nr 2</a>
+      <a href="#third">Wróć do nagłówka nr 3</a>
+      <a href="#fourth">Wróć do nagłówka nr 4</a>
+    </footer>
+    <!-- <script type="module" src="main.js"></script> -->
+    <!-- <script src="dist/main.js"></script> -->
   </body>
 </html>
