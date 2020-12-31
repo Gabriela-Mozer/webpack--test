@@ -95,10 +95,16 @@ module.exports = {
       filename: "gabi.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/personal",
+      template: "./src/pages/personal/someKind.html",
       inject: true,
       chunks: ["index", "another"],
       filename: "personal.html",
     }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/personal",
+    //   inject: true,
+    //   chunks: ["index", "another"],
+    //   filename: "personal.html",
+    // }),
   ],
 };
