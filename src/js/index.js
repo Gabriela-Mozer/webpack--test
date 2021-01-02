@@ -153,3 +153,17 @@ hamburger.addEventListener('click', ()=> {
 /* place your code below */
 
 console.log('HELLO 🚀')
+console.log(JSON.stringify({name:"gabi"}));
+document.cookie='name = gabi';
+
+// localStorage.setItem('human', 'gabi');
+
+console.log(localStorage.getItem('human'));
+// const myNewObject = JSON.parse(myResult);
+// myNewObject.newProperty ='hi';
+// console.log(myNewObject);
+// const myResult = localStorage.getItem('nowyKlucz');
+
+// localStorage.setItem('nowyKlucz', JSON.stringify({name:"gabi"}));
+
+// console.log(JSON.parse(myResult));
