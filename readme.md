@@ -1,18 +1,24 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
+# Table of contents
 
-# WTF Webpack Starter Kit 
+-  [General Info](Webpack-test.md)
+- [Technologies](Webpack-test.md)
+- [Setup](Webpack-test.md)
 
-Simple toolkit for your static websites development.
+# General Info
 
-## How to use it?
+This webpage is basic project from begginer frontend developer. It's my personal journey about my learning HTML, CSS and JS which contains also other technologies like node.js, webpack starter-kit, SASS.
+I hope to develope better content in my frontend future :) 
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+# Technologies
 
-## Available scripts
+- HTML
+- SASS
+- JS
+- WEBPACK
 
-`npm run start` - runs development mode
+# Setup 
+Clone this repo to your desktop using `git clone`, go to its root directory and `run npm install` to install its dependencies.
 
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+Once the dependencies are installed, you can run `npm run start` to start the application. You will then be able to access it at localhost:8080
 
