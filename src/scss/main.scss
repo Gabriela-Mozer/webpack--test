@@ -130,6 +130,13 @@ h3{
   // top:5px;
   
 }
+.infographic{
+  transition-property: width;
+  transition-duration: .45s;
+}
+.infographic:hover{
+ width: 550px;
+}
 .week-summary__heading::before{
   content:"";
   display:block;
