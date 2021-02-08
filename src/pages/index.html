@@ -242,7 +242,7 @@
               strybut bez nazwy checked, który zaznacza atrybuty radio i
               checkbox. Z innych często spotykanych na stronie typów są
               "number", "password", "email", "tel","range"(czyli taki fajny
-              suwak , któremu trzba nadać wartości min, max i step),
+              suwak , któremu trzeba nadać wartości min, max i step),
               "file"(,który przegląda pliki). Select można używać zamiast inputa
               a option , daje nam możliwość wyboru opcji z listy rozwijanej.
               Textarea jest ciekawym znacznikiem bo daje możliwość wpisania
@@ -302,6 +302,7 @@
                 Potem było o przechowywaniu danych w js  (document.cookie, local i session storage no i JSON, który mi nie zadziałał z bardzo...). Na końcu co nieco o projektowaniu graficznym. Dobrze się składa bo grafik dezajn is maj paszyn.
               </p>
               <p>W tym tygodniu (10) wreszcie były animacje oraz tworzenie aplikacji. Muszę się jednak pozwierzać ( chyba znowu),że nadal mam problemy ze swobodnym używaniem js-a. Dzisiaj majstrowałam co nieco przy tym projekcie ale myślę już o następnych oraz o założeniu własnej appki ( tylko dla siebie).</p>
+              
             <p class="extra-paragraph--js"></p>
           </article>
         </div>
@@ -332,7 +333,24 @@
             tych modułów, nawet jeśli do nich potem wróce to wszystko mi się
             pomiesza.
           </p>
-          <br />
+          <p>Stwierdziłam, że poświęce tutaj chwilę na napisanie kilku słów o API. Czym zatem jest API? Aplication Programming Interface to zestaw reguł definiujący komunikację pomiędzy systemami komputerowymi oraz systemem komputerowym a użytkownikiem.</p>
+          <p>HTTP(S)- Hypertext Transfer Protocol - protokuł przesyłania dokumentów hipertextowych. Jego metody wykorzystuje się podczas tworzenia REST API i jest ich łącznie 9🧮 : 
+            <li>GET</li>
+            <li>POST</li>
+            <li>PUT</li>
+            <li>DELETE</li>
+            <li>CONNECT</li>
+            <li>OPTIONS</li>
+            <li>TRACE</li>
+            <li>PATCH</li>
+            <li>HEAD</li>
+
+            Dla przypomnienia : metoda GET służy do pobierania danych, metoda POST służy tworzeniu i przesyłaniu nowych danych.
+           </p>
+          <p>REST -Representotional State Transfer- jest to styl architektury oprogramowania, opierajacy się o zbiór wcześniej określonych reguł opisujących jak definiowane są zasoby. REST definiuje kształt architektury API,jest zorientowany na zasoby, posiada jednorodny interfejs i bezstanowość uług. Jest często wykorzystywany w systemach rozproszonych.</p>
+          <p>GRAPHQL- to nowe narzędzie następca REST. Jest to query language wykorzystywany do obsługi API, cechujący się większą elastycznością i dokładnością w porównaniu do REST. GRAPHQL to język za pomocą, którego pytasz o dane. GRAPHQL wykorzystje jeden endpoint (adres zapytania) do wymiany danych.</p>
+          <img class="infographic" src = "../assets/img/graphql2.png" alt="infographic">
+          <br/>
           <p>
             <b
               >Muszę pamiętać o validatorze i o pilnowaniu porządku w nowym
