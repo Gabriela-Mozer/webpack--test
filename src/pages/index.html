@@ -318,7 +318,19 @@
                 Ponadto mowa była o działaniu API - czyli technologi, służącej do pozyskiwania i rozsyłania danych z zewnątrz. Takimi narzędziami budujacymi stukturę API są REST, który jednak zostaje wypierany rzez GRAPHQL.
                 API korzysta z meto protokołu HTTP. Jedną z aplikacji służących do obsługi API. Fetch API jest interfejsem służącym do asynchronicznego pobierania zasobów.Opiera się o mechanizm PROMISE - nie blokuje on kodu, nawet jeśli długo się wykonuje. PROMIS-y mogą się wykonywać asynchronicznie. Fetch to jest taki kod :fetch("https://api.github.com/users/Gabriela-Mozer/repos?sort=created")
                 .then(resp=>resp.json())
-                .then(resp=>{....
+                .then(resp=>{....//w resp mamy jasona z odpowiedzią })
+                Następnym tematem było testowanie strony na różnych przeglądarkach. Możns to robić za pomocą:  
+                <li>BrowserStack</li>
+                <li>Browsershots</li>
+                <li>Virtualbox- do uruchomienia strony w innym środowisku</li>
+                <li>Developer.microsoft-virtual machines</li>
+                <li>•	Progressive enhancement- udostępnianie treści strony na przeglądarkach, które nie obsługują pewnych elementów (np. jak nie obsługuje grida)
+                  o	@supports – reguła css-owa
+                  </li>
+                <li>Can I use</li>
+                Ostatnim tematem była <strong>Optymalizacja </strong> - jest to optymalne dostosowanie strony do konkretnych potrzeb. Jej celem jest najczęściej pomoc w zwiększeniu wyników wyszukiwania, zwiększenie szybkości ładowania (nie mniej niż 300ms) i poprawa User Experience. W ogólnym skrócie Optymalizacja strony obejmuje między innymi: zmniejszenie rozmiaru strony dla szybszego ładowania. Lighthouse/audit mówi o tym jak strona/ aplikacja jest dostosowana do ładowania na różnych urządzeniach. Web.dev- można sprawdzić jak dana strona jest dostosowana do użytkowników. Można też użyć strony tinyPng do kompresowania obrazów aby mniej ważyły.
+                <strong>Minifikacja</strong> -ogarnięcie kodu w pliku tak aby był czytelny dla przeglądarki ( usuwania białych znaków czyli spacji …) np. w starter kit jest katalog dist.
+                <strong>Critical CSS</strong>- część kodu css wrzucona do sekcji head aby strona mogła się szybciej ładować.o	„Przeglądarka musi pobrać i przeanalizować pliki CSS, zanim będzie mogła wyświetlić stronę, co sprawia, że CSS jest zasobem blokującym renderowanie. Jeśli pliki CSS są duże lub warunki sieciowe są złe, żądania dotyczące plików CSS mogą znacznie wydłużyć czas renderowania strony internetowej.” 
               </p>
               
             <p class="extra-paragraph--js"></p>

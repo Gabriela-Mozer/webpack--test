@@ -202,12 +202,12 @@ background: orange;
   top:20px;
   right:20px;
 }
-// .grid{
-//   display:grid;
-//   grid-template-columns:1fr minmax(150px,1fr);
-//   grid-template-rows: repeat(4, 150px);
-//   column-gap:15px;
-//   row-gap:15px;
+.grid{
+  display:grid;
+  grid-template-columns:1fr minmax(150px,1fr);
+  grid-template-rows: repeat(4, 150px);
+  column-gap:15px;
+  row-gap:15px;}
   /* grid-template-columns: 350px 2fr 2fr 2fr 2fr 2fr; */
   /* grid-template-rows: 50px 50px; */
 // }
